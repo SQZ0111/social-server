@@ -34,6 +34,10 @@ app.use(async function(req,res,next) {
     next()
 })
 
+app.get("/",(req,res) => {
+  res.send("This is the home routes.\nFor futher routes type /api according route!")
+})
+
 //routes für testen der app
 app.use('/test',testRouter);
 
